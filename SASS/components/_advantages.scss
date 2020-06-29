@@ -19,7 +19,7 @@
   margin-right: 30px;
   align-items: center;
   justify-content: center;
-  background-color: #f5f4fa;
+  background-color: $secondary-background-color;
 }
 .icon {
   display: block;
@@ -47,19 +47,8 @@
 
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: $grey-text-color;
 }
 .advantages-element:last-child {
   margin-right: 0px;
-}
-.exempleslist {
-  position: relative;
-  padding: 0;
-  margin: 0px;
-  display: flex;
-}
-.element-list {
-  padding: 0px;
-  margin-right: 30px;
-  width: calc((100% - 60px) / 3);
 }

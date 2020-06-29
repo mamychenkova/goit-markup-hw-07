@@ -25,13 +25,23 @@
     display: flex;
     margin-right: 60px;
 
-    & :hover,
-    & :focus {
+    & :hover {
       color: $accent-blue-color;
-      &:hover .current::before {
+
+      & .current::before {
         transform: translateX(-101%);
       }
-      &:hover .current::after {
+      & .current::after {
+        transform: translateX(101%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+    & :focus {
+      color: $accent-blue-color;
+      & .current::before {
+        transform: translateX(-101%);
+      }
+      & .current::after {
         transform: translateX(101%);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }

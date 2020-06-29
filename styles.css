@@ -278,7 +278,7 @@ ul {
 .advantages-element:last-child {
   margin-right: 0px;
 }
-.exempleslist {
+.examples-list {
   position: relative;
   padding: 0;
   margin: 0px;
@@ -290,7 +290,7 @@ ul {
   width: calc((100% - 60px) / 3);
 }
 /* work-exemples section */
-.work-examples {
+.examples {
   margin-top: 0px;
   padding-bottom: 94px;
   padding-top: 94px;
