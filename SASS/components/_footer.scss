@@ -1,0 +1,121 @@
+.footer {
+  background: #2f303a;
+  color: #ffffff;
+}
+.footer .container {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.adress-container {
+  margin-right: 140px;
+}
+.sociallink-container {
+  margin-right: 100px;
+}
+
+.footer .logo-studio {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+.footer .logo-web {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+}
+
+.contacts {
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.contacts br {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.sociallink-end {
+  display: flex;
+  color: rgba(255, 255, 255, 0.1);
+  margin-top: 16px;
+}
+
+.link-end {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.link-end:hover {
+  background-color: #2196f3;
+}
+.link-end:hover .social {
+  fill: #ffffff;
+}
+.end {
+  font-size: 12px;
+  line-height: 24px;
+  /* or 200% */
+
+  width: 100%;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.4);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0px;
+}
+.mailing-container {
+  display: flex;
+}
+.email {
+  width: 270px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 16px;
+  background-color: #2f303a;
+  color: rgba(255, 255, 255, 0.4);
+}
+.footer .button {
+  margin-top: 34px;
+  display: flex;
+}
+.plane {
+  margin-left: 10px;
+  fill: #ffffff;
+  background-color: #2196f3;
+}

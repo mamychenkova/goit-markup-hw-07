@@ -8,6 +8,7 @@
 /* #000000 -половина логотипа студио
 /* #F5F4FA-цвет фона секции наша команда, фон картинок преимущества
 /* #2F303A-цвет фона футера*/
+/* utils */
 html {
   box-sizing: border-box;
 }
@@ -30,7 +31,7 @@ ul {
   padding: 0px;
   margin: 0px;
 }
-
+/* Header markup */
 .logo-web {
   font-family: Raleway;
   font-style: normal;
@@ -69,15 +70,6 @@ ul {
   justify-content: center;
 }
 
-/* .site-nav a {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #212121;
-} */
 .nav-container {
   display: flex;
   align-items: center;
@@ -172,7 +164,7 @@ ul {
 .adress-nav:focus {
   color: #2196f3;
 }
-
+/* Hero-section markup */
 .container {
   width: 1200px;
   margin-right: auto;
@@ -192,19 +184,7 @@ ul {
 
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
   color: #ffffff;
-
-  /* background-color: url(/images/Header\ img-min.jpg),
-   rgba(47, 48, 58, 0.8);
-    background-position: center;
-  
-  margin-top: 0px;
-  margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 646px;
-   text-align: center; */
 }
 .container-hero {
   width: 1600px;
@@ -307,6 +287,7 @@ ul {
   margin-right: 30px;
   width: calc((100% - 60px) / 3);
 }
+/* work-exemples section */
 .work-examples {
   margin-top: 0px;
   padding-bottom: 94px;
@@ -339,6 +320,7 @@ h2 {
   margin: 0px;
   padding: 30px;
 }
+/* Team Section markup */
 .team-section {
   background-color: #f5f4fa;
 
@@ -388,12 +370,7 @@ h2 {
 
   margin-bottom: 16px;
 }
-/* .s {
-  display: block;
-  width: 44px;
-  height: 44px;
-  padding: 10px;
-} */
+
 .sociallink-list {
   display: flex;
   align-items: center;
@@ -440,6 +417,7 @@ h2 {
   transition-duration: 1000ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* Client-section */
 .klient-link {
   fill: #afb1b8;
   border: 1px solid #afb1b8;
@@ -475,6 +453,7 @@ h2 {
   padding-bottom: 94px;
   padding-top: 94px;
 }
+/* Footer */
 .footer {
   background: #2f303a;
   color: #ffffff;
@@ -596,7 +575,7 @@ h2 {
   fill: #ffffff;
   background-color: #2196f3;
 }
-/* Оформление модального окна */
+/* Оформление бэкдропа */
 
 .backdrop.is-hidden {
   opacity: 0;
@@ -612,6 +591,8 @@ h2 {
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* Оформление модального окна */
+
 .modal {
   position: absolute;
   top: 50%;
@@ -688,7 +669,7 @@ h2 {
   top: 25%;
   left: 42px;
 
-  font-weight: ;
+  font-weight: 200;
   font-size: 14px;
   line-height: 16px;
   line-height: 1.14;
@@ -809,9 +790,6 @@ textarea {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* .group {
-  margin-bottom: 20px;
-} */
 
 .rules {
   color: #2196f3;
@@ -830,6 +808,7 @@ textarea {
 }
 
 /* портфолио */
+/* portfolio buttons */
 .button-list a {
   font-weight: 500;
   font-size: 16px;
@@ -865,6 +844,7 @@ textarea {
   color: #ffffff;
   background: #2196f3;
 }
+/* Portfolio */
 .tehnokrak {
   display: flex;
 
