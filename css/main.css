@@ -914,6 +914,7 @@ textarea {
   width: 20px;
   height: 20px;
   background-color: #ffffff;
+  fill: #000000;
 }
 
 .icon-check {
