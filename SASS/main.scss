@@ -1,3 +1,5 @@
+@import './utils/fonts';
+@import './utils/variables';
 @import './components/body';
 @import './components/logo';
 @import './components/header';
@@ -7,6 +9,7 @@
 @import './components/team';
 @import './components/clients';
 @import './components/footer';
+@import './components/backdrop';
 @import './components/modal';
 @import './components/portfolio-btns';
 @import './components/portfolio';

@@ -105,6 +105,11 @@ textarea {
   display: inline-block;
 }
 
+.btn {
+  width: 200px;
+  transform: translateX(50%);
+}
+
 .icon-form {
   position: absolute;
   top: 50%;
@@ -122,7 +127,7 @@ textarea {
 }
 .form-field:focus-within > .form-input {
   border: 1px solid #2196f3;
-  transition-property: border;
+  outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Анимация лейблов */
@@ -184,6 +189,10 @@ textarea {
   transform: translate(10px, -10px);
   align-items: center;
   cursor: pointer;
+}
+.close-button:focus-within {
+  outline: none;
+  border: none;
 }
 .visually-hidden {
   position: absolute;
