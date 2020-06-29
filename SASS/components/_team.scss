@@ -1,31 +1,33 @@
-.team-section {
-  background-color: #f5f4fa;
+.team {
+  &-section {
+    background-color: $secondary-background-color;
 
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.team-heading {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-
-  letter-spacing: 0.03em;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  &-heading {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+  }
 }
 .team-list {
   display: flex;
   text-align: center;
-}
-.team-list-person {
-  margin-right: 30px;
-  background: #ffffff;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-}
-.team-list-person:last-child {
-  margin-right: 0px;
+
+  &-person {
+    margin-right: 30px;
+    background: #ffffff;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+  }
+  &-person:last-child {
+    margin-right: 0px;
+  }
 }
 .name {
   font-weight: 500;
@@ -43,54 +45,7 @@
   line-height: 19px;
   /* identical to box height */
   letter-spacing: 0.03em;
-  color: #757575;
+  color: $grey-text-color;
 
   margin-bottom: 16px;
-}
-
-.sociallink-list {
-  display: flex;
-  align-items: center;
-  padding-bottom: 24px;
-  justify-content: space-evenly;
-  padding-top: 16px;
-}
-.sociallink-element {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-
-  transition-property: color;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.s {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.social {
-  fill: #afb1b8;
-  display: flex;
-  width: 20px;
-  height: 20px;
-  align-items: center;
-  justify-content: center;
-}
-.sociallink-element:hover,
-.sociallink-element:focus {
-  background-color: #2196f3;
-  border-radius: 50%;
-  transition-property: background-color;
-  transition-duration: 1500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.sociallink-element:hover .social,
-.sociallink-element:focus .social {
-  fill: #ffffff;
-  transition-property: color, fill;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

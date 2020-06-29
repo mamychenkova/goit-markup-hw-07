@@ -1,16 +1,3 @@
-.button-list a {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  /* identical to box height, or 162% */
-  letter-spacing: 0.03em;
-  color: #212121;
-  background: #f5f4fa;
-
-  height: 38px;
-  padding: 6px 22px;
-  margin-right: 8px;
-}
 .button-list {
   display: flex;
   margin-top: 94px;
@@ -19,17 +6,29 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  & a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+    background: $secondary-background-color;
+    height: 38px;
+    padding: 6px 22px;
+    margin-right: 8px;
+  }
 }
 .button-portfolio {
   padding: 6px 22px;
   border-radius: 4px;
-}
 
-.button-portfolio:hover,
-.button-portfolio:focus {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  color: #ffffff;
-  background: #2196f3;
+  &:hover,
+  &:focus {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: $white-color;
+    background: $accent-blue-color;
+  }
 }
