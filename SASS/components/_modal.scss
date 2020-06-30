@@ -41,6 +41,42 @@ textarea {
   padding: 12px 16px 12px;
 }
 
+.button {
+  display: inline-block;
+}
+
+.btn {
+  width: 200px;
+  transform: translateX(50%);
+}
+
+.icon {
+  &-form {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: $white-color;
+  }
+  &-check {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    opacity: 0;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid $accent-blue-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    margin-right: 8px;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
 .form {
   min-width: 528px;
   height: 580px;
@@ -99,62 +135,27 @@ textarea {
     width: 448px;
     margin-left: auto;
     margin-right: auto;
-
-    /* Анимация иконок */
-    &:focus-within > .icon {
-      fill: $accent-blue-color;
-    }
-    &:focus-within > .form-input {
-      border: 1px solid $accent-blue-color;
-      outline: none;
-      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    /* Анимация лейблов */
-    &:focus-within > .form-label,
-    &:focus-within > .comment {
-      color: $accent-blue-color;
-      transform: translate(-16px, -36px);
-      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
   }
-}
-.button {
-  display: inline-block;
-}
-
-.btn {
-  width: 200px;
-  transform: translateX(50%);
-}
-
-.icon {
-  &-form {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-color: $white-color;
-    fill: $logo-color;
+  /* Анимация иконок */
+  .form-field:focus-within > .icon {
+    fill: $accent-blue-color;
   }
-  &-check {
-    left: 0;
-    bottom: 0;
-    position: absolute;
-    opacity: 0;
-    display: block;
-    width: 15px;
-    height: 15px;
+  &-field:focus-within > .form-input {
     border: 1px solid $accent-blue-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
-    margin-right: 8px;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  /* Анимация лейблов */
+  &-field:focus-within > .form-label,
+  &-field:focus-within > .comment {
+    color: $accent-blue-color;
+    transform: translate(-16px, -36px);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-
+.form-field:focus-within > .form-label {
+  color: $accent-blue-color;
+}
 .check {
   position: relative;
   display: block;
