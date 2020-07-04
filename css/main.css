@@ -981,6 +981,7 @@ textarea {
 .close-button:focus-within {
   outline: none;
   border: none;
+  fill: #2196f3;
 }
 
 .rules {

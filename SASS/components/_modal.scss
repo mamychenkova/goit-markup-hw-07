@@ -188,6 +188,7 @@ textarea {
   &:focus-within {
     outline: none;
     border: none;
+    fill: $accent-blue-color;
   }
 }
 
