@@ -731,19 +731,9 @@ h2 {
 }
 
 .backdrop .is-hidden {
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .modal {
@@ -756,10 +746,6 @@ h2 {
   opacity: 1;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comment {
@@ -787,17 +773,19 @@ textarea {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
-  padding: 12px 16px 12px;
+  padding: 12px 42px 12px;
 }
 
 .button {
   display: inline-block;
+  border: none;
 }
 
 .btn {
   width: 200px;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
+  outline: none;
 }
 
 .icon-form {
@@ -871,9 +859,9 @@ textarea {
 
 .form-label {
   position: absolute;
-  top: 25%;
+  top: 16px;
   left: 42px;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   line-height: 1.14;
@@ -897,7 +885,7 @@ textarea {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
-  padding: 12px 16px 12px;
+  padding: 12px 42px 12px;
 }
 
 .form-field {
@@ -915,7 +903,7 @@ textarea {
   margin-right: auto;
 }
 
-.form .form-field:focus-within > .icon {
+.form-field:focus-within > .icon {
   fill: #2196f3;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -937,6 +925,16 @@ textarea {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:not(:placeholder-shown) ~ .form-label {
+  -webkit-transform: translate(-16px, -42px);
+          transform: translate(-16px, -42px);
+}
+
+.textarea:not(:placeholder-shown) ~ .comment {
+  -webkit-transform: translate(-16px, -42px);
+          transform: translate(-16px, -42px);
 }
 
 .form-field:focus-within > .form-label {
@@ -976,6 +974,7 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .close-button:focus-within {
@@ -985,6 +984,7 @@ textarea {
 }
 
 .rules {
+  margin-left: 5px;
   color: #2196f3;
   border-bottom: #2196f3;
 }
@@ -1015,6 +1015,17 @@ textarea {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .button-list {
